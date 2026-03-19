@@ -1,33 +1,69 @@
-# Terraform working directory
-.terraform/
+# ---------------------------------------------------
 
-# Terraform state files
+# Terraform State
+
+# ---------------------------------------------------
+
 *.tfstate
 *.tfstate.*
-
-# Crash logs
 crash.log
+crash.*.log
 
-# Sensitive variable files
+# ---------------------------------------------------
+
+# Terraform Working Directory
+
+# ---------------------------------------------------
+
+.terraform/
+
+# ---------------------------------------------------
+
+# Terraform Variable Files
+
+# ---------------------------------------------------
+
 *.tfvars
 *.tfvars.json
+terraform.tfvars
+terraform.tfvars.json
+*.auto.tfvars
 
-# CLI configuration files
-.terraformrc
-terraform.rc
+# ---------------------------------------------------
 
-# Terraform lock file (optional decision)
-# Keep it if you want reproducible provider versions
-# Ignore it if you want dynamic provider updates
-# In most production repos we KEEP it
-#!.terraform.lock.hcl
+# Terraform Plan Files
 
-# MacOS junk
+# ---------------------------------------------------
+
+*.tfplan
+
+# ---------------------------------------------------
+
+# Environment / Secrets
+
+# ---------------------------------------------------
+
+.env
+.env.*
+*.env
+
+# ---------------------------------------------------
+
+# OS Files
+
+# ---------------------------------------------------
+
 .DS_Store
-
-# Windows junk
 Thumbs.db
+desktop.ini
 
-# IDE files
+# ---------------------------------------------------
+
+# Editor / IDE Files
+
+# ---------------------------------------------------
+
 .vscode/
 .idea/
+*.swp
+*.swo
